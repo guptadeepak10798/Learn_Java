@@ -18,7 +18,7 @@ public class DemoArrayList extends Object {
         System.out.println(list);
 
         int arr[]=new int[4];
-        System.out.println(arr.getClass().getName());
+        System.out.println(arr.toString());
 
 //        int arr[] = { 12,2,15,67};
 //        int arr[]=new int[4];
