@@ -1,6 +1,7 @@
 package learnCollections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class DemoArrayList extends Object {
@@ -19,6 +20,7 @@ public class DemoArrayList extends Object {
         System.out.println(arrayList);
         arrayList.add(10);
         arrayList.add("hello");
+        arrayList.add(10);
         arrayList.add(10.5236);
         arrayList.add('D');
         System.out.println(arrayList);
@@ -29,6 +31,45 @@ public class DemoArrayList extends Object {
         arrayList2.add("Hii");
         arrayList2.add("Bye");
         System.out.println(arrayList2);
+
+        arrayList2.add(2,45);
+        System.out.println(arrayList2);
+
+        arrayList2.set(2,60);
+        System.out.println(arrayList2);
+
+//        arrayList2.getClass();
+//        arrayList2.removeAll(arrayList);
+        System.out.println(arrayList2);
+
+        arrayList2.retainAll(arrayList);
+        System.out.println(arrayList2);
+
+        //Traverse using for loop
+        System.out.println("Traverse using for loop");
+        for (int i = 0; i < arrayList2.size(); i++){
+            System.out.println(arrayList2.get(i));
+        }
+
+        //Traverse using foreach loop
+        System.out.println("Traverse using foreach loop");
+        for (Object o : arrayList2){
+            System.out.println(o);
+        }
+        //Traverse using iterator
+        System.out.println("Traverse using iterator");
+        Iterator iterator = arrayList2.iterator();
+        System.out.println("iterator - "+iterator);
+        while (iterator.hasNext()) {
+            Object o = iterator.next();
+            System.out.println(o);
+        }
+
+
+
+
+
+
         /*int arr[]=new int[4];
         System.out.println(arr.toString());*/
 
